@@ -110,12 +110,12 @@ p {
     background-color: hsl(158, 36%, 30%);
 }
 
-.button:focus{
+/* .button:focus{
     outline-width: 2px;
     outline-offset: 1px;
     outline-style: dashed;
     outline-color: hsla(158, 36%, 37%, 0.7);
-}
+} */
 
 .button:active {
     background-color: hsl(158, 36%, 25%);
