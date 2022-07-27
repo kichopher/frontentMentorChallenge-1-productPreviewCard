@@ -1,0 +1,165 @@
+/* Feel free to remove these styles or customise in your own stylesheet 👍 */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* my styles -- standard css resets and element styles*/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    color: hsl(228, 12%, 48%);
+    /* Dark grayish blue */
+
+    /* for vertically centering content*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+p {
+    margin-top: 0;
+    margin-bottom: 1.1rem;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: hsl(212, 21%, 14%);
+    /* Very dark blue */
+    line-height: 1em;
+}
+
+p {
+    font-size: 0.875rem;
+    line-height: 1.6em;
+}
+
+/* my styles -- common custom classes and others*/
+
+.card {
+    max-width: 600px;
+    margin: 1.8rem 1rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.card__img--desktop {
+    display: none;
+}
+
+.card__content {
+    padding: 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__content-label {
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: .5rem;
+    border: 0;
+    color: white;
+    width: 100%;
+    padding: 1em;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.05ch;
+    -webkit-tap-highlight-color: transparent; /* to remove highlighting on touch */
+    cursor: pointer;
+}
+
+.button>* {
+    margin: 0 0.4em;
+}
+
+.button:hover {
+    background-color: hsl(158, 36%, 30%);
+}
+
+.button:focus{
+    outline-width: 2px;
+    outline-offset: 1px;
+    outline-style: dashed;
+    outline-color: hsla(158, 36%, 37%, 0.7);
+}
+
+.button:active {
+    background-color: hsl(158, 36%, 25%);
+}
+
+/* my styles -- page-specific styles*/
+
+.price__container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.price__container>* {
+    margin: 0
+}
+
+.price__now {
+    color: hsl(158, 36%, 37%);
+}
+
+.price__before {
+    margin-left: 1em;
+    text-decoration: line-through;
+}
+
+@media (min-width: 600px) {
+    .row {
+      display: flex;
+    }
+  
+    section.landing {
+      margin: auto 0;
+    }
+  
+    .card__img--desktop {
+      display: block;
+      max-width: 50%;
+    }
+  
+    .card__img--mobile {
+      display: none;
+    }
+    .card__content {
+      padding: 2rem 2rem;
+    }
+  }
